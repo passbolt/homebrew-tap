@@ -9,9 +9,9 @@ class GoPassboltCli < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc/go-passbolt-cli_0.2.1-rc_darwin_arm64.tar.gz"
-      sha256 "252c3ba8ee56fbd4b575f868c6da40baaf8a7d706a5f065180d45046a37bac72"
+    if Hardware::CPU.intel?
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc/go-passbolt-cli_0.2.1-rc_darwin_amd64.tar.gz"
+      sha256 "2be5a3eb1239ad53e2fb7bd5209888562b2f9fecdc348721580a5816b6464fd9"
 
       def install
         bin.install "passbolt"
@@ -22,9 +22,9 @@ class GoPassboltCli < Formula
         # ...
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc/go-passbolt-cli_0.2.1-rc_darwin_amd64.tar.gz"
-      sha256 "fb9b75cfc35c12dfd3e7e259930bc510c5d9a7bb3a98656e49b16cf1357e45cb"
+    if Hardware::CPU.arm?
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc/go-passbolt-cli_0.2.1-rc_darwin_arm64.tar.gz"
+      sha256 "9d02e1773b7016fe1fe7081f56c379218ec575a947eae9eb1daf015565eacd6c"
 
       def install
         bin.install "passbolt"
@@ -40,7 +40,7 @@ class GoPassboltCli < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc/go-passbolt-cli_0.2.1-rc_linux_arm64.tar.gz"
-      sha256 "bdf738beb13916caa002378471e69444cd090ef557d29793a7d1e29c6e3f427a"
+      sha256 "7f3d7d40a9b56ad705cffd12d123e17c0e125d58501272df43661deabcfd0e63"
 
       def install
         bin.install "passbolt"
@@ -53,7 +53,7 @@ class GoPassboltCli < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc/go-passbolt-cli_0.2.1-rc_linux_amd64.tar.gz"
-      sha256 "9ebdfae4273fddd3b6ff8e016ed87464578f785de6df41a5fbf12f1fdb77df8b"
+      sha256 "7d5cff540196f32d60d3504b081b06d47c9cd5cb9d8a753ab460b90e410ed1bb"
 
       def install
         bin.install "passbolt"
