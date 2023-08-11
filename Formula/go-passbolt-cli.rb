@@ -5,33 +5,33 @@
 class GoPassboltCli < Formula
   desc "A CLI tool to interact with Passbolt, a Open source Password Manager for Teams"
   homepage "https://github.com/passbolt/go-passbolt-cli"
-  version "0.2.1-rc3"
+  version "0.2.1-rc4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc3/go-passbolt-cli_0.2.1-rc3_darwin_amd64.tar.gz"
-      sha256 "98385df9f90ae647ebfdb3e6112c17c61c2eb7e9f22af0c48d0e96eee269da49"
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc4/go-passbolt-cli_0.2.1-rc4_darwin_amd64.tar.gz"
+      sha256 "ed896e22ca776ed55e194ccfb4a9d7af43d80bd4dc4ea1d61df48ad21da04e1a"
 
       def install
         bin.install "passbolt"
         bash_completion.install "completion/bash" => "passbolt"
         zsh_completion.install "completion/zsh" => "_passbolt"
         fish_completion.install "completion/fish" => "passbolt.fish"
-        man1.install "man/*"
+        man1.install Dir["man/*"]
         # ...
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc3/go-passbolt-cli_0.2.1-rc3_darwin_arm64.tar.gz"
-      sha256 "d37bc411f160d92dd5b0f08b279b83ff04e8f91db1183849e86f572a5cfbab69"
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc4/go-passbolt-cli_0.2.1-rc4_darwin_arm64.tar.gz"
+      sha256 "97eae70fcfe65d555737a30fccd96a6b1cacbc3e7fbe6483b93fd59103c26a8d"
 
       def install
         bin.install "passbolt"
         bash_completion.install "completion/bash" => "passbolt"
         zsh_completion.install "completion/zsh" => "_passbolt"
         fish_completion.install "completion/fish" => "passbolt.fish"
-        man1.install "man/*"
+        man1.install Dir["man/*"]
         # ...
       end
     end
@@ -39,28 +39,28 @@ class GoPassboltCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc3/go-passbolt-cli_0.2.1-rc3_linux_arm64.tar.gz"
-      sha256 "ca93d945d78416e042c3a2978bc4cbed37d532f1d4188635ca6f397bab221ec5"
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc4/go-passbolt-cli_0.2.1-rc4_linux_arm64.tar.gz"
+      sha256 "67f5104aae3669ba9bee67d69c32eb8e152fba29082c0652fff52d715615b6c0"
 
       def install
         bin.install "passbolt"
         bash_completion.install "completion/bash" => "passbolt"
         zsh_completion.install "completion/zsh" => "_passbolt"
         fish_completion.install "completion/fish" => "passbolt.fish"
-        man1.install "man/*"
+        man1.install Dir["man/*"]
         # ...
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc3/go-passbolt-cli_0.2.1-rc3_linux_amd64.tar.gz"
-      sha256 "7a71168ee2c43ede8a6549cf6ee0bb778c1eadc61606b8427251eb1f9d9eedcc"
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.2.1-rc4/go-passbolt-cli_0.2.1-rc4_linux_amd64.tar.gz"
+      sha256 "0a7f627112cba069f2796699225f6bf0fad665b9cbab0f7e4d02bb6e84addb81"
 
       def install
         bin.install "passbolt"
         bash_completion.install "completion/bash" => "passbolt"
         zsh_completion.install "completion/zsh" => "_passbolt"
         fish_completion.install "completion/fish" => "passbolt.fish"
-        man1.install "man/*"
+        man1.install Dir["man/*"]
         # ...
       end
     end
