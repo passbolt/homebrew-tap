@@ -11,7 +11,7 @@ class GoPassboltCli < Formula
   on_macos do
     on_intel do
       url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0-beta.1/go-passbolt-cli_0.4.0-beta.1_darwin_amd64.tar.gz"
-      sha256 "350a013de8186d65b7eb804c26e56bc8bd9be7e93b2e5f5756af960fac5ff696"
+      sha256 "d2fe244cfecadbc486b74cf9918547c6a98d15aa88c0cc5df6593ff23a595840"
 
       def install
         bin.install "passbolt"
@@ -24,7 +24,7 @@ class GoPassboltCli < Formula
     end
     on_arm do
       url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0-beta.1/go-passbolt-cli_0.4.0-beta.1_darwin_arm64.tar.gz"
-      sha256 "a2dc07055029380e40a51f2e296245662f01b7da8a4b7dd66afbbeb3c9bdb6de"
+      sha256 "19e8efd216a3a041bbb0bf8db642f774a057403b99ddef4b0bc685d4c71b0f69"
 
       def install
         bin.install "passbolt"
@@ -41,7 +41,7 @@ class GoPassboltCli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0-beta.1/go-passbolt-cli_0.4.0-beta.1_linux_amd64.tar.gz"
-        sha256 "3b4541471a5d87242a00ab6fe381be3c75b077fc7c29f3bf69e0becfadc3254c"
+        sha256 "e9c535694029b04037e33f4fd6b1b185a4fda97a556cc613fe3d5e16555b158d"
 
         def install
           bin.install "passbolt"
@@ -56,7 +56,7 @@ class GoPassboltCli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0-beta.1/go-passbolt-cli_0.4.0-beta.1_linux_arm64.tar.gz"
-        sha256 "1ce7cadb72dfa1079fa82d897e916e0ba2e6c59ab0ec31ad28aaca35ff9b71bd"
+        sha256 "0cf221c96235608c163270f3509057ab5355711075a886f93197eec60a2d6187"
 
         def install
           bin.install "passbolt"
