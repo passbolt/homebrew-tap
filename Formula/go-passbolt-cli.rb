@@ -5,13 +5,13 @@
 class GoPassboltCli < Formula
   desc "A CLI tool to interact with Passbolt, a Open source Password Manager for Teams"
   homepage "https://github.com/passbolt/go-passbolt-cli"
-  version "4.0.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v4.0.0/go-passbolt-cli_4.0.0_darwin_amd64.tar.gz"
-      sha256 "9c8fa14e0bcf355aeefefd1db7b0d8805f35db890bc19819c9779d73158fbcbf"
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0/go-passbolt-cli_0.4.0_darwin_amd64.tar.gz"
+      sha256 "3fa69738cc130aa9fb42ded30d23de7d73bad953ff965cc0ba20ba7b36d8f907"
 
       def install
         bin.install "passbolt"
@@ -23,8 +23,8 @@ class GoPassboltCli < Formula
       end
     end
     on_arm do
-      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v4.0.0/go-passbolt-cli_4.0.0_darwin_arm64.tar.gz"
-      sha256 "598a7185d2f1f721d08547eeaabded896b54e569c1dc0671bd5d0734d2ad0720"
+      url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0/go-passbolt-cli_0.4.0_darwin_arm64.tar.gz"
+      sha256 "20eb8a5faea576e85d99ad03d4600389acd6b98ce5169e97aec636e32903ba91"
 
       def install
         bin.install "passbolt"
@@ -40,8 +40,8 @@ class GoPassboltCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/passbolt/go-passbolt-cli/releases/download/v4.0.0/go-passbolt-cli_4.0.0_linux_amd64.tar.gz"
-        sha256 "383bad2cffcb2c86b25b411a50b5037d163c15e6406b854446abc6e8a82a560e"
+        url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0/go-passbolt-cli_0.4.0_linux_amd64.tar.gz"
+        sha256 "abfb23221611183ec025c59668ccd87bc2477e0a585680d7b50efad62a66993e"
 
         def install
           bin.install "passbolt"
@@ -55,8 +55,8 @@ class GoPassboltCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/passbolt/go-passbolt-cli/releases/download/v4.0.0/go-passbolt-cli_4.0.0_linux_arm64.tar.gz"
-        sha256 "d79827a71cee74f0c8085d38922fee35b2d4c1c2cc6af8bb9998ad986ebe482c"
+        url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.0/go-passbolt-cli_0.4.0_linux_arm64.tar.gz"
+        sha256 "b9e72d748c3708a3a3a012e84fe2c0e037cc3ccf67f19a157ceea39f2d7571ea"
 
         def install
           bin.install "passbolt"
