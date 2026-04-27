@@ -24,7 +24,7 @@ class GoPassboltCli < Formula
     end
     on_arm do
       url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.2/go-passbolt-cli_0.4.2_darwin_arm64.tar.gz"
-      sha256 "82dd7417fb814ac196363607d483df62d177a920da112f361e3abb731fd8e9f7"
+      sha256 "56ad48ed3fce99c4ff95353d7c368831b609a11bcb26f860ee1e43dfa654a8c3"
 
       def install
         bin.install "passbolt"
