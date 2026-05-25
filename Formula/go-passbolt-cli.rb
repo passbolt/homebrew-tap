@@ -41,7 +41,7 @@ class GoPassboltCli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/passbolt/go-passbolt-cli/releases/download/v0.4.2/go-passbolt-cli_0.4.2_linux_amd64.tar.gz"
-        sha256 "2a32fce92c3e539433d5e0a92d2abd53ae69bc6932bd1050da9ff80a3dee5165"
+        sha256 "72a411491df67c27e2844448f09a01e85099b42f75338d65c677f6ae3366a7a5"
 
         def install
           bin.install "passbolt"
